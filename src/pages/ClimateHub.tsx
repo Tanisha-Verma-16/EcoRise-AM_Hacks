@@ -40,7 +40,7 @@ const ClimateHub = () => {
     }
 
     return (
-      <div className="bg - green-200 grid md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4">
+      <div className=" grid md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4">
         <button
           onClick={() => setSelectedActivity('quiz')}
           className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
