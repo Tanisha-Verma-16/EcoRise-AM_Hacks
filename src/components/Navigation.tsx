@@ -60,29 +60,7 @@ const Navigation: React.FC = () => {
 
           <div className="flex items-center space-x-4">
             <ThemeToggle />
-            {user ? (
-              <>
-                <button className="px-4 py-2 rounded-full bg-green-600 text-white hover:bg-green-700 dark:bg-green-500 dark:hover:bg-green-600 font-medium transition-colors">
-                  Start Campaign
-                </button>
-                <UserMenu />
-              </>
-            ) : (
-              <>
-                <button
-                  onClick={() => setIsAuthModalOpen(true)}
-                  className="px-4 py-2 rounded-full text-green-600 dark:text-green-500 hover:bg-green-50 dark:hover:bg-green-900/20 font-medium transition-colors"
-                >
-                  Sign In
-                </button>
-                <button
-                  onClick={() => setIsAuthModalOpen(true)}
-                  className="px-4 py-2 rounded-full bg-green-600 text-white hover:bg-green-700 dark:bg-green-500 dark:hover:bg-green-600 font-medium transition-colors"
-                >
-                  Start Campaign
-                </button>
-              </>
-            )}
+            
           </div>
         </div>
       </div>
