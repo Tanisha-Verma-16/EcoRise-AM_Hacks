@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import CrowdFunding from './components/LandingPage';
 import { Dashboard } from './components/Dashboard';
 import { CampaignDetails } from './components/CampaignDetails';
+import ClimateHub from './pages/ClimateHub';
 
 export const categories = [
   { icon: Leaf, name: 'Afforestation', color: 'bg-green-100 text-green-600' },
