@@ -117,6 +117,7 @@ function App() {
         <Route path="/start-campaign" element={<CrowdFunding />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/campaign/:id" element={<CampaignDetails />} />
+        <Route path="/fun" element={<ClimateHub />} />
       </Routes>
     </div>
   );
