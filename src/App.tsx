@@ -3,7 +3,6 @@ import { Leaf, Waves, Wind, Factory } from 'lucide-react';
 import Navigation from './components/Navigation';
 import HomePage from './pages/HomePage';
 import CrowdFunding from './components/LandingPage';
-import { Dashboard } from './components/Dashboard';
 import { CampaignDetails } from './components/CampaignDetails';
 import ClimateHub from './pages/ClimateHub';
 
@@ -116,7 +115,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
 
         <Route path="/start-campaign" element={<CrowdFunding />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        
         <Route path="/campaign/:id" element={<CampaignDetails />} />
         <Route path="/fun" element={<ClimateHub />} />
       </Routes>

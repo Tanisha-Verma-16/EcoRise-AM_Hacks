@@ -2,14 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { TrendingUp, Calculator, Users, Mail, GamepadIcon } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
-import { useAuth } from '../context/AuthContext';
 import UserMenu from './UserMenu';
-import AuthModal from './AuthModal';
+
 
 const Navigation: React.FC = () => {
-  const { user } = useAuth();
-  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
-
+  
   return (
     <nav className="bg-white dark:bg-gray-900 shadow-sm transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -64,10 +61,7 @@ const Navigation: React.FC = () => {
           </div>
         </div>
       </div>
-      <AuthModal
-        isOpen={isAuthModalOpen}
-        onClose={() => setIsAuthModalOpen(false)}
-      />
+     
     </nav>
   );
 };
